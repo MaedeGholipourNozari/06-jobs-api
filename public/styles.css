@@ -1,0 +1,122 @@
+ body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+        color: #22223b;
+        min-height: 100vh;
+      }
+      h1 {
+        text-align: center;
+        color: #3f37c9;
+        margin-top: 2rem;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+      }
+      hr {
+        border: none;
+        border-top: 2px solid #e0e7ff;
+        margin: 1.5rem 0;
+      }
+      #message {
+        text-align: center;
+        color: #e63946;
+        font-size: 1.1rem;
+        min-height: 1.2em;
+      }
+      form {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(60, 72, 88, 0.10);
+        padding: 1.5rem 2rem;
+        max-width: 350px;
+        margin: 1.5rem auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      label {
+        font-weight: 500;
+        margin-bottom: 0.3rem;
+        color: #22223b;
+      }
+      input, select {
+        padding: 0.6em 0.9em;
+        border: 1.5px solid #c7d2fe;
+        border-radius: 6px;
+        font-size: 1rem;
+        background: #f8fafc;
+        transition: border 0.18s;
+      }
+      input:focus, select:focus {
+        border-color: #3f37c9;
+        outline: none;
+      }
+      button {
+        padding: 0.6em 1.2em;
+        border-radius: 6px;
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-right: 0.5em;
+        margin-top: 0.5em;
+        transition: background 0.18s, color 0.18s, border 0.18s;
+      }
+      #logon, #register, #logoff, #add-experience, #adding-experience, #logon-button, #register-button {
+        background: #3f37c9;
+        color: #fff;
+        border: 1.5px solid #3f37c9;
+      }
+      #logon:hover, #register:hover, #logoff:hover, #add-experience:hover, #adding-experience:hover, #logon-button:hover, #register-button:hover {
+        background: #4361ee;
+        border-color: #4361ee;
+      }
+      #logon-cancel, #register-cancel, #edit-cancel {
+        background: #fff;
+        color: #3f37c9;
+        border: 1.5px solid #3f37c9;
+      }
+      #logon-cancel:hover, #register-cancel:hover, #edit-cancel:hover {
+        background: #e0e7ff;
+      }
+      #logon-register, #experiences, #logon-div, #register-div, #edit-experience {
+        max-width: 400px;
+        margin: 2rem auto;
+        text-align: center;
+      }
+      #experiences {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(60, 72, 88, 0.10);
+        padding: 2rem 1.5rem;
+      }
+      #experiences-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+      }
+      #experiences-table th, #experiences-table td {
+        padding: 0.7em 1em;
+        text-align: left;
+      }
+      #experiences-table th {
+        background: #e0e7ff;
+        color: #3f37c9;
+        font-weight: 600;
+        border-bottom: 2px solid #c7d2fe;
+      }
+      #experiences-table tr:nth-child(even) {
+        background: #f1f5fd;
+      }
+      #experiences-table td {
+        border-bottom: 1px solid #e0e7ff;
+      }
+      @media (max-width: 600px) {
+        form, #experiences {
+          padding: 1rem 0.5rem;
+        }
+        #experiences-table th, #experiences-table td {
+          padding: 0.4em 0.5em;
+        }
+      }
