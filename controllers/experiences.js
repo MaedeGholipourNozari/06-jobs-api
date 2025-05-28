@@ -62,7 +62,7 @@ const deleteExperience = async (req, res) => {
   if (!experience) {
     throw new NotFoundError(`No experience with id ${experienceId}`)
   }
-  res.status(StatusCodes.OK).send()
+ res.status(StatusCodes.OK).json({ msg: "The entry was deleted." });
 }
 
 module.exports = {
